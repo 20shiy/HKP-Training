@@ -1,0 +1,92 @@
+<link href="https://fonts.googleapis.com/css?family=Bungee Outline" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Varela Round" rel="stylesheet" type="text/css">
+<style>
+  h1{
+    text-align: center;
+    color: green;
+    font-size: 40px;
+    font-family: Bungee Outline;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .centerText{
+    text-align: center;
+  }
+  form {
+    margin: auto;
+    display: table;
+    background: linear-gradient(45deg,#ccffff,#ffcccc);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+  }
+  body {
+    background: linear-gradient(35deg,#ffda6b,#da6bff);
+    font-family: Varela Round;
+    font-size: 20px;
+    
+  }
+  .green-text {
+    color: green;
+  }
+  .pink-text{
+    color: red;
+  }
+  .button {
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin: 2px;
+    font-size: 16px;
+  }
+  
+</style>
+<h1 id="title">A Survey</h1>
+<p id="description" class="centerText green-text" style="text-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)">This is a survey form I created to applied my newly learnt HTML and CSS skills.</p>
+
+<form id="survey-form" class="green-text" style="font-size: 16px">
+  <label for="name" id="name-label">Name</label><br>
+  <input id="name" type="text" placeholder="Enter your name" required><br>
+  <label for="email" id="email-label">Email</label><br>
+  <input id="email" type="email" placeholder="Enter your Email" required><br>
+  <label for="number" id="number-label">Choose your favorite number from 0-100:</label><br>
+  <input id="number" type="number" placeholder="Number" min="0" max="100" required><br>
+  <label for="mood" id="dropdown">Describe your mood today:</label>
+  <select name="mood" id="dropdown">
+    <option>-</option>
+    <option value="sunny">sunny</option>
+    <option value="cloudy">cloudy</option>
+    <option value="rainy">rainy</option>
+    <option value="stormy">stormy</option>
+    <option value="rainbow">rainbow</option>
+  </select><br>
+  
+    <p>
+        If you were to eat only one item for the next ten years, what would you choose? 
+    </p>
+    <input type="radio" id="fruits" name="eating-choice" value="fruits">fruit<br>
+  
+    <input type="radio" id="eggs" name="eating-choice" value="eggs">eggs<br>
+ 
+    <input type="radio" id="eggs" name="eating-choice" value="vegetables">vegetables<br>
+  
+    <input type="radio" id="cheese" name="eating-choice" value="cheese">cheese<br>
+  
+    <input type="radio" id="potato chips" name="eating-choice" value="potato chips">potato chips<br>
+    
+    <p>
+        What is(are) your favorite day(s) of the week? 
+    </p>
+    <input type="checkbox" id="sunday" value="sunday" name="week">Sunday<br>
+    <input type="checkbox" id="monday" value="monday" name="week">Monday<br>
+    <input type="checkbox" id="tuesday" value="tuesday" name="week">Tuesday<br>
+    <input type="checkbox" id="wednesday" value="wednesday" name="week">Wednesday<br>
+    <input type="checkbox" id="thursday" value="thursday" name="week">Thursday<br>
+    <input type="checkbox" id="friday" value="friday" name="week">Friday<br>
+    <input type="checkbox" id="saturday" value="saturday" name="week">Saturday<br><br>
+    
+    <label for="feedback">Any comments or suggestions?</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+    
+    <input type="submit" class="button">
+</form>
